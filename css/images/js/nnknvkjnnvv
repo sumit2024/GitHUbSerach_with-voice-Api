@@ -1,0 +1,79 @@
+
+// let search = document.querySelector('#search')
+// let remplate = document.querySelector("#template")
+
+// search.addEventListener('keyup',(e) =>{
+//     let searchText = e.target.value;
+//     SearchGitHUbProfiles(searchText)
+// })
+// /*   git hub api */
+
+// // function SearchGitHUbProfiles(searchText){
+// //    https: Client_ID = "Iv1.f2fafe44f5af707a"
+// //    let Client_secret = "36b14b326fd85ede4566ced32a5521c1c3fcf052"
+// //    let BASE_URL = `https://api.github.com/users/repos?${searchText}&client_ID=${Client_ID}&client_secret${Client_secret}`;
+
+// // window.fetch(BASE_URL)
+// // .then((data) =>{
+// //          data.json()
+// //          .then((users) =>{
+// //              let output = "";
+// //              for (let user in users){
+// //                  output+= `<img src="${users.avatar_url}" alt= "users" />`
+// //              }
+// //              document.getElementById
+// //              ("template").innerHTML = output;
+// //          })
+// // })
+// // .catch((err) => console.log(err))
+// // }
+
+
+// function SearchGitHUbProfiles(searchText){
+//     let  Client_ID = "753e889794fc17669cf0"
+//    let client_secret=  "57ca0b1c1e5ccc68f42c1a005c8662aad6d218bb";
+//     BASE_URL = 
+//     `https://api.github.com/users/${searchText}?Client_ID=${Client_ID}&client_secret=${client_secret}`;
+  
+  
+//   window
+//   .fetch(BASE_URL)
+//    .then((data) => {
+//     //     redable screen
+// data
+// .json()
+// .then(users => {
+
+//     if (users.message === "not Found") {
+//         template.innerHtml = ` <h1 style=""> no github profile found found</h1>`;
+//     } else {
+//         let  output = "";
+//         output +=`
+//        <section id="profileBlock>
+//    <article>
+//     <div class="letBlock">
+//     <figure>
+//     <img src="${users.avatar_url}" alt="${users.login} />
+// </figure>
+//         <h4>${users.login}</h4>
+//         <h5>${users.login}</h5>
+//         <h5>${users.bio}</h5>
+//         <hr>
+//         <h5>${users.company}</h5>
+//         <h5>${users.location}</h5>
+
+//     </div>
+//     <div class="rightBlock">
+//         <h4>right side</h4> 
+//     </div>
+//    </article>
+//    </section>
+//    `;
+//    template.innerHtml = output;
+//     }
+//    })
+//    .catch((err) => console.log(err))
+// })
+// .catch((err) => console.log(err))
+// }
+
